@@ -3,7 +3,7 @@
  * Initialize as an array of tuples (name, counter).
  */
 let subjectsArray = []; 
-let subjectsNames = new Set(); 
+//let subjectsNames = new Set(); 
 
 /**
  * Access the JSON containing the subjects and topics, parses it and creates new tuples to 
@@ -18,7 +18,7 @@ async function loadData() {
         for (let i in allSubjects) {
             let subject = allSubjects[i];
             let subjectName = subject.name;
-            subjectsNames.add(subjectName);
+            //subjectsNames.add(subjectName);
 
             for (let j in subject.subtopics) {
                 let subtopic = subject.subtopics[j];
@@ -155,6 +155,7 @@ function createQuestionButtons () {
             btn.style.backgroundColor = 'green';
             btn.textContent = `${name} (Repeated ${subjectsArray[index].counter} times)`;
             btn. disabled= true; 
+            updateChart(name);
         };
         buttonContainer.appendChild(btn);
     });
@@ -164,14 +165,69 @@ function createQuestionButtons () {
 /**
  * Function to create a pie chart
  */
-function createPie(){
-    console.log(subjectsNames[0]); 
-    var trackers = anychart.data.set([subjectsNames[0], 10], [subjectsNames[1], 10], [subjectsNames[2], 10]);  
-    var chart = anychart.pie(trackers)
-                        .innerRadius('50%');
-    chart.title('Progress');
-    chart.container('subtopics');
-    chart.draw();
+let doughnutChart; 
+let completed = {
+    "SPLANCO": 0, 
+    "LOCOMOTORE": 0, 
+    "NERVOSO": 0
+};
+const totalQuestions = {
+    "SPLANCO": 7, 
+    "LOCOMOTORE": 16, 
+    "NERVOSO": 16
+} 
+function updateChart(subjectName){
+    const subject = subjectName.substring(0, subjectName.indexOf(":"));
+    
+    if(completed[subject] !== undefined){
+        completed[subject]++; 
+    }
+
+    const completedPercentages = {
+        "SPLANCO": (completed["SPLANCO"]/ totalQuestions["SPLANCO"]) * 100, 
+        "LOCOMOTORE": (completed["LOCOMOTORE"]/ totalQuestions["LOCOMOTORE"]) * 100,
+        "NERVOSO": (completed["NERVOSO"]/ totalQuestions["NERVOSO"]) * 100,
+        "DA_FARE": (((7+16+16)-(completed["SPLANCO"]) - (completed["LOCOMOTORE"]) - (completed["NERVOSO"]))/(7+16+16))*100
+    }; 
+    
+    const graph = document.getElementById('graph'); 
+    graph.innerHTML=''; 
+    
+    const canvas = document.createElement('canvas'); 
+    graph.appendChild(canvas); 
+    const ctx = canvas.getContext('2d'); 
+    console.log(Object.values(completedPercentages))
+    doughnutChart = new Chart(ctx, {
+        type: 'doughnut', 
+        data: {
+            labels: Object.keys(completedPercentages), 
+            datasets: [{
+                data: Object.values(completedPercentages), 
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', 'white'], 
+                hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', 'white'],
+                borderColor: ['#000000', '#000000', '#000000', '#000000'], // Set black border color for each segment
+                borderWidth: 0.5
+            }]
+        }, 
+        options: {
+            responsive: true, 
+            maintainAspectRatio: false,
+            plugins: {
+                
+                title: {
+                    display: true, 
+                    text: 'Progress Graph', 
+                    color: 'black',
+                    font: {
+                        size: 18
+                    }
+                    
+                }
+            }
+        }
+
+    });
+
 }
 
 /**
@@ -197,5 +253,6 @@ window.onload = async () => {
         console.log("saved successfully!"); 
     }); 
 
+     
      
 };
