@@ -1,175 +1,174 @@
 {
     "subjects": [
         {
-            "name": "SPLANCO", 
+            "name": "SPLANCO",
             "subtopics": [
                 {
-                    "name": "visceri pelvici revisionare rapporti e mezzi di fissità", 
+                    "name": "visceri pelvici revisionare rapporti e mezzi di fissità",
+                    "counter": 1
+                },
+                {
+                    "name": "ripasso generale laringe, trachea, bronchi e polmoni",
                     "counter": 0
                 },
                 {
-                    "name": "ripasso generale laringe, trachea, bronchi e polmoni", 
+                    "name": "restringimenti esofageo, ripasso generale canale digerente",
                     "counter": 0
                 },
                 {
-                    "name": "restringimenti esofageo, ripasso generale canale digerente", 
+                    "name": "peritoneo, vasi che decorrono nei mesi",
                     "counter": 0
                 },
                 {
-                    "name": "peritoneo, vasi che decorrono nei mesi", 
+                    "name": "loggia renale e rene",
+                    "counter": 1
+                },
+                {
+                    "name": "cuore",
                     "counter": 0
                 },
                 {
-                    "name": "loggia renale e rene", 
-                    "counter": 0
-                },
-                {
-                    "name": "cuore", 
-                    "counter": 0
-                },
-                {
-                    "name": "fegato", 
+                    "name": "fegato",
                     "counter": 0
                 }
             ]
-        }, 
+        },
         {
-            "name": "LOCOMOTORE", 
+            "name": "LOCOMOTORE",
             "subtopics": [
                 {
-                    "name": "spazi, linee", 
-                    "counter": 0
-                }, 
+                    "name": "spazi, linee",
+                    "counter": 1
+                },
                 {
-                    "name": "diaframma e muscoli respiratori", 
-                    "counter": 0
-                }, 
+                    "name": "diaframma e muscoli respiratori",
+                    "counter": 1
+                },
                 {
-                    "name": "muscoli masticatori, muscoli e fasce collo", 
-                    "counter": 0
-                }, 
+                    "name": "muscoli masticatori, muscoli e fasce collo",
+                    "counter": 1
+                },
                 {
-                    "name": "muscoli addome, canale inguinale, cosa c'è dentro", 
-                    "counter": 0
-                }, 
-                {
-                    "name": "art temporomandibolare, arcata dentaria, art atlanto-occ e atlassiale", 
+                    "name": "muscoli addome, canale inguinale, cosa c'è dentro",
                     "counter": 0
                 },
                 {
-                    "name": "seni paranasali e fontanelle", 
-                    "counter": 0
-                }, 
+                    "name": "art temporomandibolare, arcata dentaria, art atlanto-occ e atlassiale",
+                    "counter": 1
+                },
                 {
-                    "name": "ripassa generalità rocca petrosa, occipitale e sfenoide", 
+                    "name": "seni paranasali e fontanelle",
                     "counter": 0
                 },
                 {
-                    "name": "fosse endocraniche", 
-                    "counter": 0
-                },  
-                {
-                    "name": "fosse esocraniche, cav nasale e orbitaria", 
-                    "counter": 0
-                }, 
-                {
-                    "name": "art ginocchio, muscoli coscia e gamba e piede", 
+                    "name": "ripassa generalità rocca petrosa, occipitale e sfenoide",
                     "counter": 0
                 },
                 {
-                    "name": "art gomito, muscoli braccio e avambraccio e mano", 
-                    "counter": 0
-                }, 
+                    "name": "fosse endocraniche",
+                    "counter": 1
+                },
                 {
-                    "name": "m. Dorso e fasce dorso", 
+                    "name": "fosse esocraniche, cav nasale e orbitaria",
                     "counter": 0
-                }, 
+                },
                 {
-                    "name": "cingolo scapolare, art glenomerale e muscoli spalla", 
+                    "name": "art ginocchio, muscoli coscia e gamba e piede",
                     "counter": 0
-                }, 
+                },
                 {
-                    "name": "pelvi, Pav pelvico, fascia endopelvica e art coxofemorale", 
+                    "name": "art gomito, muscoli braccio e avambraccio e mano",
                     "counter": 0
-                }, 
+                },
                 {
-                    "name": "gabbia toracica, art vertebra costali, costocondrali, condrosternali", 
+                    "name": "m. Dorso e fasce dorso",
                     "counter": 0
-                }, 
+                },
                 {
-                    "name": "curve colonna vertebrale e generalità", 
+                    "name": "cingolo scapolare, art glenomerale e muscoli spalla",
+                    "counter": 1
+                },
+                {
+                    "name": "pelvi, Pav pelvico, fascia endopelvica e art coxofemorale",
+                    "counter": 1
+                },
+                {
+                    "name": "gabbia toracica, art vertebra costali, costocondrali, condrosternali",
                     "counter": 0
+                },
+                {
+                    "name": "curve colonna vertebrale e generalità",
+                    "counter": 1
                 }
             ]
-        }, 
+        },
         {
-            "name": "NERVOSO", 
+            "name": "NERVOSO",
             "subtopics": [
                 {
-                    "name":"diencefalo, nuclei talamo e ipotalamo", 
-                    "counter": 0
-                }, 
+                    "name": "diencefalo, nuclei talamo e ipotalamo",
+                    "counter": 1
+                },
                 {
-                    "name":"plesso", 
-                    "counter": 0
-                }, 
-                {
-                    "name":"tronco encefalico", 
-                    "counter": 0
-                }, 
-                {
-                    "name":"midollo spinale", 
-                    "counter": 0
-                }, 
-                {
-                    "name":"vie sens e mot", 
-                    "counter": 0
-                }, 
-                {
-                    "name":"vie dei 5 sensi", 
-                    "counter": 0
-                }, 
-                {
-                    "name":"telencefalo", 
+                    "name": "plesso",
                     "counter": 0
                 },
                 {
-                    "name":"willis", 
+                    "name": "tronco encefalico",
+                    "counter": 1
+                },
+                {
+                    "name": "midollo spinale",
                     "counter": 0
                 },
                 {
-                    "name":"seni dura madre, meningi, tele corioidee e plessi corioidei", 
+                    "name": "vie sens e mot",
                     "counter": 0
                 },
                 {
-                    "name":"cervelletto", 
+                    "name": "vie dei 5 sensi",
+                    "counter": 1
+                },
+                {
+                    "name": "telencefalo",
                     "counter": 0
                 },
                 {
-                    "name":"occhio", 
+                    "name": "willis",
+                    "counter": 1
+                },
+                {
+                    "name": "seni dura madre, meningi, tele corioidee e plessi corioidei",
                     "counter": 0
                 },
                 {
-                    "name":"orecchio", 
+                    "name": "cervelletto",
+                    "counter": 1
+                },
+                {
+                    "name": "occhio",
                     "counter": 0
                 },
                 {
-                    "name":"trigemino, glossofaringeo", 
+                    "name": "orecchio",
                     "counter": 0
                 },
                 {
-                    "name":"ipoglosso, facciale e vago", 
+                    "name": "trigemino, glossofaringeo",
                     "counter": 0
                 },
                 {
-                    "name":"vestibolococleare e accessorio", 
+                    "name": "ipoglosso, facciale e vago",
+                    "counter": 1
+                },
+                {
+                    "name": "vestibolococleare e accessorio",
                     "counter": 0
                 },
                 {
-                    "name":"oculomotori", 
-                    "counter": 0
+                    "name": "oculomotori",
+                    "counter": 1
                 }
-
             ]
         }
     ]
